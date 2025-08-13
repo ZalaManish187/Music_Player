@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Latest (6.x) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2985/2985161.png" height="15" alt="" srcset="">
+
+                </div>
+                <div class="circle">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png" height="15" alt="" srcset="">
+                </div>
+
+            </nav>
+            <img src="img.png" alt="" srcset="" class="song-img">
+            <h3>PASSO BEM SOLTO-Slowed</h1>
+            <br>
+            <p>ATLXS</p>
+                <br>
+                <audio controls id="song">
+                <source src="Audio.mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div><i class="fa-solid fa-play" onclick="playPause()" id="cntrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
